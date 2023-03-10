@@ -1,0 +1,44 @@
+
+.body__form_select {
+  margin-top: 15px;
+  padding: 7px 40px 7px 12px;
+  width: auto;
+  border: 1px solid #e2b5a8;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 1px 3px -2px #9098A9;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 150ms ease;
+
+  &:required:invalid{
+    color: #ff4c3c;
+  }
+
+  &:focus{
+    outline: none;
+    border-color: #e2b5a8;
+    box-shadow: 0 2px 2px 0 rgba(#67455c,.2);
+  }
+}
+
+.body__form_input {
+  margin-top: 20px;
+  display: block;
+  padding: 5px;
+  width: auto;
+  border: 1px solid #e2b5a8;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 1px 3px -2px #9098A9;
+  font-family: inherit;
+  font-size: 24px;
+  transition: all 150ms ease;
+
+  &:focus{
+    outline: none;
+    border-color: #e2b5a8;
+    box-shadow: 0 2px 2px 0 rgba(#67455c,.2);
+  }
+}

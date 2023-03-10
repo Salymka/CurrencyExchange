@@ -1,0 +1,30 @@
+.runningLine {
+  background: #67455c;
+  height: 65px;
+}
+
+.runningLine__wrapper {
+  width: max-content;
+  animation: ticker 60s infinite linear forwards;
+  display: flex;
+  align-items: center;
+  height: 65px;
+}
+
+.runningLine__ticker {
+  font-family: "Roboto", sans-serif;
+  width: max-content;
+  color: #e2b5a8;
+  margin: 0 10px;
+  text-transform: uppercase;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate(110vw, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}

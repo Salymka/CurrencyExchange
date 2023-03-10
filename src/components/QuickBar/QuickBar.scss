@@ -1,0 +1,16 @@
+.body__form__quickBar {
+  display: flex;
+}
+
+.body__form__quickBar_item {
+  margin: 10px 5px;
+  padding: 0 5px;
+  border: 1px solid #e2b5a8;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 1px 3px -2px #9098A9;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 150ms ease;
+}

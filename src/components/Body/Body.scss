@@ -1,0 +1,47 @@
+.color1 {
+  color: #4a394a;
+}
+
+.color2 {
+  color: #67455c;
+}
+
+.color3 {
+  color: #956079;
+}
+
+.color4 {
+  color: #d58993;
+}
+
+.color5 {
+  color: #e2b5a8;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+
+}
+.body_image {
+  width: 50px;
+  height: 50px;
+  margin: 40px 30px;
+}
+.body__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body__form {
+  padding: 30px 20px 10px 20px;
+  max-width: 1080px;
+  min-width: auto;
+  min-height: 400px;
+  margin-top: 50px;
+  border: 2px solid #67455c;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 0 rgba(#67455c,.2);
+}
+

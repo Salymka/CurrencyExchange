@@ -18,19 +18,19 @@ const Body = ({currencyList}) => {
     const updatePrice = (name, newPrice) => {
         if (name === currencyName) {
             setCurrencyPrice(newPrice)
-            newPrice !== 0 ? setConvertedCurrencyPrice(getPrice(currencyName) * newPrice / getPrice(convertedCurrencyName)) : 0;
+            newPrice !== 0 ? setConvertedCurrencyPrice(+(getPrice(currencyName) * newPrice / getPrice(convertedCurrencyName)).toFixed(5)) : 0;
         } else {
             setConvertedCurrencyPrice(newPrice)
-            newPrice !== 0 ? setCurrencyPrice(getPrice(convertedCurrencyName) * newPrice / getPrice(currencyName)) : 0;
+            newPrice !== 0 ? setCurrencyPrice(+(getPrice(convertedCurrencyName) * newPrice / getPrice(currencyName)).toFixed(5)) : 0;
         }
     }
     const updateCurrencyName = (name, newCurrencyName) => {
         if (name === currencyName) {
             setCurrencyName(newCurrencyName)
-            setConvertedCurrencyPrice(getPrice(newCurrencyName) * currencyPrice / getPrice(convertedCurrencyName));
+            setConvertedCurrencyPrice(+(getPrice(newCurrencyName) * currencyPrice / getPrice(convertedCurrencyName)).toFixed(5));
         } else {
             setConvertedCurrencyName(newCurrencyName)
-            setCurrencyPrice(getPrice(newCurrencyName) * convertedCurrencyPrice / getPrice(currencyName));
+            setCurrencyPrice(+(getPrice(newCurrencyName) * convertedCurrencyPrice / getPrice(currencyName)).toFixed(5));
         }
     }
 
